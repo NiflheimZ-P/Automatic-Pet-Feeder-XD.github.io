@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        EmbedCode: ['"Playwrite GB S"', "cursive"],
+      },
+    },
   },
   plugins: [],
 }
