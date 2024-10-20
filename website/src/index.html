@@ -15,14 +15,14 @@
 </head>
 
 <body>
-    <!-- header -->
+    <!-- Navigation Bar -->
     <nav class="h-[10vh] flex justify-around border border-x-0 border-t-0 border-black fixed w-full items-center bg-white shadow-xl z-10">
-        <h1 class='text-[60px] font-EmbedCode'>Peet</h1>
+        <h1 class='text-[60px] font-EmbedCode nav-item'><a href="#home">Peet</a></h1>
         <ul class="flex w-[50vw] justify-between tracking-widest">
-            <li class=""><a href="#about">About</a></li>
-            <li class=""><a href="#code">Source Code</a></li>
-            <li class=""><a href="#video">Video Demo</a></li>
-            <li class=""><a href="#member"></a>Member</li>
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#code">Source Code</a></li>
+            <li class="nav-item"><a href="#video">Video Demo</a></li>
+            <li class="nav-item"><a href="#member">Member</a></li>
         </ul>
         <a href="https://github.com/NiflheimZ-P/Automatic-Pet-Feeder-XD" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 30 30">
@@ -30,33 +30,124 @@
             </svg>
         </a>
     </nav>
-    <div class="h-[10vh]"></div>
 
-    <!-- page -->
-    <div class="h-[90vh] min-w-screen bg-gray-100 flex justify-center items-center">
+    <!-- Home page -->
+    <div id="home" class="h-[100vh] min-w-screen bg-gray-100 flex justify-center items-center">
         <div class="flex gap-[5vw]">
             <div class="w-[50%] max-w-[60ch] flex flex-col gap-[7%] justify-center">
                 <div>
-                    <h2 class="text-[2rem] font-mono">ARDUINO PROJECT</h2>
-                    <h1 class="text-[4rem] font-mono"><b>Peet</b></h1>
+                    <h2 class="text-[2rem] font-mono text-sub-header">ARDUINO PROJECT</h2>
+                    <h1 class="text-[4rem] text-header"><b>Peet</b></h1>
                 </div>
-                <p class="text-[1.2rem]">โปรเจค IoT Microcontroller สำหรับการให้อาหารสัตว์เป็นระบบที่ใช้ไมโครคอนโทรลเลอร์ในการควบคุมเครื่องให้อาหารสัตว์อัตโนมัติ โดยผู้ใช้สามารถสั่งการให้อาหารสัตว์ผ่านเว็บไซต์ออนไลน์ได้ ระบบนี้เชื่อมต่อกับอินเทอร์เน็ต ทำให้ผู้ใช้สามารถสั่งให้อาหารได้ทันทีจากที่ใดก็ได้ เพื่อเพิ่มความสะดวกและประสิทธิภาพในการดูแลสัตว์เลี้ยงของคุณในทุกที่ทุกเวลา</p>
+                <p class="text-[1.2rem]">โปรเจกต์ IoT Microcontroller สำหรับการให้อาหารสัตว์เป็นระบบที่ใช้ไมโครคอนโทรลเลอร์ในการควบคุมเครื่องให้อาหารสัตว์อัตโนมัติ โดยผู้ใช้สามารถสั่งการให้อาหารสัตว์ผ่านเว็บไซต์ออนไลน์ได้ ระบบนี้เชื่อมต่อกับอินเทอร์เน็ต ทำให้ผู้ใช้สามารถสั่งให้อาหารได้ทันทีจากที่ใดก็ได้ เพื่อเพิ่มความสะดวกและประสิทธิภาพในการดูแลสัตว์เลี้ยงของคุณในทุกที่ทุกเวลา</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <img class="aspect-square w-[80%] rounded-3xl drop-shadow-2xl" src="https://i.pinimg.com/enabled_lo/564x/ac/b4/53/acb453916f2ec33462cde593826d09c3.jpg" alt="peet">
+            </div>
+        </div>
+    </div>
+
+    <!-- About page -->
+    <div id="about" class="h-[100vh] min-w-screen bg-gray-200 flex justify-center items-center">
+        <div class="flex gap-[5vw] justify-center items-center">
+            <img class="aspect-square w-[40%] rounded-3xl drop-shadow-2xl" src="https://i1.sndcdn.com/artworks-CV4UoOgLfnyGkFDz-Hx4y0A-t1080x1080.jpg" alt="peet">
+            <div class="w-[50%] max-w-[60ch] flex flex-col">
+                <h1 class="text-[4rem] text-header"><b>Project details</b></h1>
+                <p class="text-[1.2rem]">โปรเจกต์เป็นการใช้ไมโครคอนโทรลเลอร์ในการควบคุมเครื่องให้อาหารสัตว์ ประกอบด้วย DC Motor Driver เป็นตัวเปิดและปิดที่เก็บอาหาร</p>
+                <h1 class="text-[4rem] text-header"><b>Main function</b></h1>
+                <p class="text-[1.2rem]">ระบบให้กดให้อาหารสัตว์จากระยะไกล</p>
+                <br>
+                <div>
+                    <button type="button" class="more-button"><a href="https://github.com/NiflheimZ-P/Automatic-Pet-Feeder-XD" target="_blank">Read More</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="h-[100vh] min-w-screen bg-gray-200 flex justify-center items-start">
+        <div>
+            <h1 class="flex justify-center items-center text-[4rem] text-header"><b>Gadget</b></h1>
+            <div class="flex gap-[7%]">
+                <div class="background-container">
+                    <img class="card-image" src="https://th-live-02.slatic.net/p/2c1089b9e3a6f4a75a939b41e3070a35.png" alt="Arduino UNO R4 WiFi">
+                    <div class="card-text">
+                        <h6 class="text-sub-header">Arduino UNO R4 WiFi</h6>
+                        <p>จำนวน 1 ตัว</p>
+                    </div>
+                </div>
+                <div class="background-container">
+                    <img class="card-image" src="https://m.media-amazon.com/images/I/51DcBu3ByOL.jpg" alt="DC Motor Driver">
+                    <div class="card-text">
+                        <h6 class="text-sub-header">DC Motor Driver</h6>
+                        <p>จำนวน 1 ตัว</p>
+                    </div>
+                </div>
+                <div class="background-container">
+                    <img class="card-image" src="https://5.imimg.com/data5/SELLER/Default/2023/6/319239580/YG/YV/SE/669417/lcd-character-display.jpg" alt="LCD Display">
+                    <div class="card-text">
+                        <h6 class="text-sub-header">LCD Display</h6>
+                        <p>จำนวน 1 ตัว</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Source Code page -->
+    <div id="code" class="h-[100vh] min-w-screen bg-gray-100 flex justify-center items-center">
+        <div class="flex gap-[5vw]">
+            <div class="w-[50%] max-w-[60ch] flex flex-col gap-[7%] justify-start">
+                <div>
+                    <h2 class="text-[2rem] font-mono text-sub-header">Peet</h2>
+                    <h1 class="text-[4rem] text-header"><b>Source Code</b></h1>
+                    <button type="button" class="more-button"><a href="https://github.com/NiflheimZ-P/Automatic-Pet-Feeder-XD" target="_blank">Read More</a></button>
+                </div>
+                
             </div>
             <img class="aspect-square w-[40%]  rounded-3xl drop-shadow-2xl" src="https://i.pinimg.com/enabled_lo/564x/ac/b4/53/acb453916f2ec33462cde593826d09c3.jpg" alt="peet">
         </div>
     </div>
 
-    <div class="h-[90vh] min-w-screen bg-gray-200">
-
+    <!-- Video Demo page -->
+    <div id="video" class="h-[100vh] min-w-screen bg-gray-200 flex justify-center items-center">
+        <div class="">
+            <div class="w-full max-w-[60ch] flex flex-col gap-[7%] items-center justify-center">
+                <h1 class="text-[4rem] text-header"><b>Video Demo</b></h1>
+                <p>คลิปวิดีโอสาธิตการทำงานของ Arduino Project เครื่องให้อาหารสัตว์</p>
+                <iframe class="drop-shadow-2xl" width="560" height="315" src="https://www.youtube.com/embed/KmvaGFOv_Oc?si=u5h_FHzUs47G8n2c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 
-    <div class="h-[90vh] min-w-screen bg-gray-300">
-
+    <!-- Member pages -->
+    <div id="member" class="h-[100vh] min-w-screen bg-gray-100 flex justify-center items-center">
+        <div class="">
+            <h1 class="flex justify-center items-center text-[4rem] text-header"><b>Member</b></h1>
+            <div class="flex gap-[5vw]">
+                <div class="background-container">
+                    <img class="card-profile-image" src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t39.30808-1/356826385_3563968667213424_993421304413377666_n.jpg?stp=dst-jpg_s200x200&_nc_cat=111&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=gcc41Z0X22cQ7kNvgEzN_KI&_nc_zt=24&_nc_ht=scontent.fbkk24-1.fna&_nc_gid=A2ZD9JFqIQfNPcx3pcfj6X6&oh=00_AYApvdRZZtM_j_CCbXv1Dr2DT0lRMaAtlv9WgK8lOG-VfQ&oe=671AA015" alt="Picture">
+                    <div class="card-text">
+                        <p class="text-sub-header">นายศิวภัสส์ กันเดช</p>
+                        <p>66070193</p>
+                    </div>
+                </div>
+                <div class="background-container">
+                    <img class="card-profile-image" src="" alt="Picture">
+                    <div class="card-text">
+                        <p class="text-sub-header">นายอนวัช ว่องประชานุกูล</p>
+                        <p>66070217</p>
+                    </div>
+                </div>
+                <div class="background-container">
+                    <img class="card-profile-image" src="https://scontent.fbkk24-1.fna.fbcdn.net/v/t39.30808-1/422932739_1521912771935358_321145194854336138_n.jpg?stp=dst-jpg_s480x480&_nc_cat=102&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=1otLXtf-KaEQ7kNvgE-HJXB&_nc_zt=24&_nc_ht=scontent.fbkk24-1.fna&_nc_gid=ArGZgbiWWlv9olxo7Jm1TRn&oh=00_AYCUGwYIkPdgyUJMW6foTxytrMO56Z_KIXi85r8s9ctWQA&oe=671A9E5F" alt="Picture">
+                    <div class="card-text">
+                        <p class="text-sub-header">นายอมรเทพ ทองปลื้ม</p>
+                        <p>66070219</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="h-[90vh] min-w-screen bg-gray-400">
-
-    </div>
 </body>
 
 </html>

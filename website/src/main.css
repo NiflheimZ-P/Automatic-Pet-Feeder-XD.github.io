@@ -2,8 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .web-body {
-    @apply min-h-screen min-w-screen bg-[#303030];
-  }
-}
