@@ -14,7 +14,7 @@ function connectToBroker() {
   const clientId = "client" + Math.random().toString(36).substring(7);
 
   // Change this to point to your MQTT broker
-  const host = "mqtt://mqtt-dashboard.com:8884/";
+  const host = "wss://phycom.it.kmitl.ac.th:8884";
 
   const options = {
     keepalive: 60,
@@ -49,12 +49,10 @@ function publishMessage() {
   const idHolder = document.querySelector("#id");
 
   const id = parseInt(idHolder.value.trim());
-  console.log("nigga", id);
 
   const topic = "Phycom/Peet/" + id;
-  console.log(topic);
 
-  mqttClient.publish(topic, id, {
+  mqttClient.publish(topic, "fatty fiveM player", {
     qos: 0,
     retain: false,
   });
