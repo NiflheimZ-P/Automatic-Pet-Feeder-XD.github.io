@@ -51,7 +51,7 @@ function publishMessage() {
 
   const topic = "Phycom/Peet/" + id;
 
-  mqttClient.publish(topic, "fatty fiveM player", {
+  mqttClient.publish(topic, "Feed", {
     qos: 0,
     retain: false,
   });

@@ -562,6 +562,18 @@ video {
   z-index: 10;
 }
 
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[5vh\] {
+  margin-bottom: 5vh;
+}
+
+.mb-\[3vh\] {
+  margin-bottom: 3vh;
+}
+
 .flex {
   display: flex;
 }
@@ -596,6 +608,22 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[30\%\] {
+  width: 30%;
+}
+
+.w-\[35\%\] {
+  width: 35%;
 }
 
 .max-w-\[60ch\] {
