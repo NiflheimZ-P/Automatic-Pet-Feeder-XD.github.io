@@ -45,7 +45,6 @@ function connectToBroker() {
 }
 
 function publishMessage() {
-  console.log("in");
   const idHolder = document.querySelector("#id");
 
   const id = parseInt(idHolder.value.trim());
