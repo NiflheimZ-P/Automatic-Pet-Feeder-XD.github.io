@@ -8,7 +8,7 @@
 LCD_I2C lcd(0x27, 16, 2);
 
 //mqtt variable
-const char MQTT_BROKER_ADRRESS[] = "test.mosquitto.org";  // CHANGE TO MQTT BROKER'S ADDRESS
+const char MQTT_BROKER_ADRRESS[] = "phycom.it.kmitl.ac.th";  // CHANGE TO MQTT BROKER'S ADDRESS
 const int MQTT_PORT = 1883;
 const String MQTT_CLIENT_ID = String(random(1000, 9999));
 
