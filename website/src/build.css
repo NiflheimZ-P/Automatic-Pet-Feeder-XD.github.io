@@ -1068,24 +1068,15 @@ video {
 
 .text-field {
   height: 2rem;
-}
-
-.confirm-button {
-  height: 34px;
-  width: 100px;
-  background-color: rgb(3 105 161);
-  color: white;
-  border-radius: 0.25rem;
-  transition-duration: 300ms;
+  margin-bottom: 5rem;
 }
 
 .nav-item-display {
   display: flex;
 }
 
-.confirm-button:hover {
-  transition-duration: 300ms;
-  background-color: rgb(12, 144, 214);
+.label-header {
+  font-size: xx-large;
 }
 
 @media screen and (max-width: 600px) {
