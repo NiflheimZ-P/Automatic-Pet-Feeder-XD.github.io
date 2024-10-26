@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
         rel="stylesheet">
 
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 
 <body>
@@ -19,11 +20,11 @@
     <nav class="h-[10vh] flex justify-around border border-x-0 border-t-0 border-black fixed w-full items-center bg-white shadow-xl z-10">
         <h1 class='text-[60px] font-EmbedCode nav-item'><a href="index.html">Peet</a></h1>
         <ul class="nav-item-display flex w-[50vw] justify-between tracking-widest">
-            <li class="nav-item"><a href="feed.html">Feed</a></li>
             <li class="nav-item"><a href="index.html#about">About</a></li>
             <li class="nav-item"><a href="index.html#code">Source Code</a></li>
             <li class="nav-item"><a href="index.html#video">Video Demo</a></li>
             <li class="nav-item"><a href="index.html#member">Member</a></li>
+            <li class="nav-item"><a href="feed.html">Feed</a></li>
         </ul>
         <a href="https://github.com/NiflheimZ-P/Automatic-Pet-Feeder-XD" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="60" height="60" viewBox="0 0 30 30">
@@ -37,10 +38,11 @@
         <form>
             <div class="display">
                 <label class="text-header label-header">ID</label>
-                <input type="text" placeholder="Enter ID here" class="text-field">
-                <button class="feed-button">Feed</button>
+                <input type="text" placeholder="Enter ID here" id="id" class="text-field">
+                <button class="publish feed-button">Feed</button>
             </div>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
