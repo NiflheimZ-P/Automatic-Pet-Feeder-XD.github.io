@@ -1,8 +1,11 @@
-# **Peet**
+#  Physical Computing Project 2024 - IT KMITL
 
 
-+ ## Project Detail
-The IoT Pet Feeder project allows you to feed your pet remotely using a web-based interface. The pet feeder is controlled by an Arduino board connected to the internet. The Arduino communicates with a cloud-based MQTT broker, allowing it to receive commands from a web interface. When the user presses a button on the website, an MQTT message is sent, triggering the feeding mechanism.
++ ## วัตถุประสงค์
+  เพื่อความสะดวกสบายในการให้อาหารสัตว์เลี้ยงได้จากระยะไกลและ ช่วยประหยัดเวลาในการให้อาหารสัตว์มากขึ้น
+      
++ ## รายระเอียดโปรเจคต์
+   โปรเจคเครื่องให้อาหารสัตว์ IoT ช่วยให้คุณสามารถให้อาหารสัตว์เลี้ยงจากระยะไกลผ่านทางเว็บอินเทอร์เฟซ โดยเครื่องให้อาหารนี้ควบคุมด้วยบอร์ด Arduino ที่เชื่อมต่อกับอินเทอร์เน็ต Arduino จะสื่อสารกับ MQTT broker บนคลาวด์ ทำให้สามารถรับคำสั่งจากเว็บอินเทอร์เฟซได้ เมื่อผู้ใช้กดปุ่มบนเว็บไซต์ ข้อความ MQTT จะถูกส่งไปยัง Arduino เพื่อเริ่มกลไกการให้อาหาร
 
 + ## Website Link
    > **[Click to website!](https://niflheimz-p.github.io/Automatic-Pet-Feeder-XD.github.io/ "Click to go to Peet")**  
